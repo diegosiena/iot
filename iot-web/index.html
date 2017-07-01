@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>IoT - Home Assistant</title>
+
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          Home Assistant
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">Sala</div>
+          <div class="panel-body">
+            <h3>Porta <span id="portaSala" class="label label-warning">Aberta</span></h3>
+            <br>
+            <button id="lampadaSala" type="button" class="btn btn-default btn-lg btn-block">Lâmpada</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">Quarto</div>
+          <div class="panel-body">
+            <button id="lampadaQuarto" type="button" class="btn btn-default btn-lg btn-block">Lâmpada</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/mqttws31.min.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
